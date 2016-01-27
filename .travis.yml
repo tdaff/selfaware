@@ -5,19 +5,11 @@ env:
     - QUIP_ARCH=linux_x86_64_gfortran BUILD=VANILLA GCC_VERSION=5
     - QUIP_ARCH=linux_x86_64_gfortran_openmp BUILD=VANILLA
     - QUIP_ARCH=linux_x86_64_gfortran_openmp BUILD=VANILLA GCC_VERSION=4.9
-    - QUIP_ARCH=linux_x86_64_gfortran_openmpi BUILD=VANILLA
-    - QUIP_ARCH=linux_x86_64_gfortran_openmpi BUILD=VANILLA GCC_VERSION=4.9
-    - QUIP_ARCH=linux_x86_64_gfortran BUILD=ALL_NOEXTERNAL GCC_VERSION=5
-    - QUIP_ARCH=linux_x86_64_gfortran BUILD=ALL_NOEXTERNAL GCC_VERSION=4.9
     - QUIP_ARCH=linux_x86_64_gfortran_openmp BUILD=ALL_NOEXTERNAL
-    - QUIP_ARCH=linux_x86_64_gfortran_openmp BUILD=ALL_NOEXTERNAL GCC_VERSION=4.4
-    - QUIP_ARCH=linux_x86_64_gfortran_openmpi BUILD=ALL_NOEXTERNAL
     - QUIP_ARCH=linux_x86_64_gfortran_openmpi BUILD=ALL_NOEXTERNAL GCC_VERSION=4.4
     - QUIP_ARCH=linux_x86_64_gfortran BUILD=ALL DOCS=true
     - QUIP_ARCH=linux_x86_64_gfortran BUILD=ALL GCC_VERSION=4.4
     - QUIP_ARCH=linux_x86_64_gfortran_openmp BUILD=ALL
-    - QUIP_ARCH=linux_x86_64_gfortran_openmp BUILD=ALL GCC_VERSION=4.4
-    - QUIP_ARCH=linux_x86_64_gfortran_openmpi BUILD=ALL
     - QUIP_ARCH=linux_x86_64_gfortran_openmpi BUILD=ALL GCC_VERSION=4.4
 matrix:
   allow_failures:

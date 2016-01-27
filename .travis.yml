@@ -30,7 +30,8 @@ python:
   - 2.7
 install:
   - gem install travis --no-rdoc --no-ri
-  - travis version
+  - travis version --no-interactive
+  - travis show --no-interactive master
   - bin/should_i_run
 script:
   - bin/should_i_run

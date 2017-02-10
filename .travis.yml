@@ -30,7 +30,7 @@ python:
   - 2.7
 install:
   - env
-  - export PREVIOUS=echo $((${TRAVIS_JOB_NUMBER%.*}-1)).${TRAVIS_JOB_NUMBER#*.}
+  - export PREVIOUS=$((${TRAVIS_JOB_NUMBER%.*}-1)).${TRAVIS_JOB_NUMBER#*.}
   - env
   - gem install travis --no-rdoc --no-ri
   - travis version --no-interactive

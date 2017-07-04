@@ -38,3 +38,10 @@ install:
   - bin/should_i_run.rb
 script:
   - bin/should_i_run.rb
+
+jobs:
+    include:
+        - stage: docker
+          script:
+              - echo "Docker docker"
+              - env

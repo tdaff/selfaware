@@ -24,8 +24,12 @@ script:
 
 jobs:
   include:
-    - stage: docker
+    - stage: docker push
       script:
-        - echo "Docker docker"
+        - echo "Docker build push docker"
         - env
 
+    - stage: docker test
+      script:
+        - echo "Docker test docker"
+        - env

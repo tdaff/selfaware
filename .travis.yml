@@ -17,9 +17,14 @@ install:
   - env
   - gem install travis --no-rdoc --no-ri
   - travis version --no-interactive
+  - sleep 5
+  - travis show --no-interactive ${PREVIOUS} | grep State | grep -e "errored\|failed"
+  - sleep 5
   - travis show --no-interactive ${PREVIOUS} --debug
+  - sleep 5
   - bin/should_i_run.rb
 script:
+  - sleep 5
   - bin/should_i_run.rb
 
 jobs:
